@@ -1,0 +1,27 @@
+{
+  "name": "ejercicio-2",
+  "version": "1.0.0",
+  "description": "Mi primer ejercicio node",
+  "main": "Index.js",
+  "scripts": {
+    "start": "node Index.js",
+    "server": "npx nodemon Index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Practicas",
+    "node",
+    "25BM"
+  ],
+  "author": "Jeronimo Eduardo",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
