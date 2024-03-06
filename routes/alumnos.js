@@ -22,9 +22,9 @@ app.route("/alumnos").get(getAlumno);
 module.exports = app;
 
 const postAlumno = (request, response) => {
-    const {id, fk_carrera, nombre, apellido, edad, email, estado} = request.body;
-    connection.query ("INSERT INTO alumno (id, fk_carrera, nombre, apellido, edad, email, estado) VALUES (?,?,?,?,?,?,?)",
-    [id, fk_carrera, nombre, apellido, edad, email, estado],
+    const { fk_carrera, nombre, apellido, edad, email, estado} = request.body;
+    connection.query ("INSERT INTO alumno ( fk_carrera, nombre, apellido, edad, email, estado) VALUES (?,?,?,?,?,?)",
+    [ fk_carrera, nombre, apellido, edad, email, estado],
     (error, results) => {
         if(error)
             throw error;
